@@ -37,10 +37,10 @@ $arUrlRewrite = array(
 		"PATH" => "/personal/index.php",
 	),
 	array(
-		"CONDITION" => "#^/catalog/#",
+		"CONDITION" => "#^/products/#",
 		"RULE" => "",
 		"ID" => "bitrix:catalog",
-		"PATH" => "/catalog/index.php",
+		"PATH" => "/index.php",
 	),
 	array(
 		"CONDITION" => "#^/store/#",
