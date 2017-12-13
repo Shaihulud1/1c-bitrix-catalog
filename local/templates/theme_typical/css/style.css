@@ -56,6 +56,26 @@ body {
 .product-item-button-container .btn{
 	display: none !important;
 } 
+.bedit{
+	display: none;
+
+}
+#weight{
+
+}
+.cart_item_list_top_container ul li:nth-child(2){
+	display: none;
+}
+.search-page{
+	display: none;
+}
+.cart_item_bottom .cart_item_total_price:first-child{
+	display: none;
+}
+.cart_item_coupon{
+	display: none;
+}
+
 /*search*/
 .h_search{
 	float: right;

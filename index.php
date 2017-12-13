@@ -2,17 +2,17 @@
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
 ?><?$APPLICATION->IncludeComponent(
-	"bitrix:catalog", 
-	"catalogg", 
-	array(
+	"bitrix:catalog",
+	"catalogg",
+	Array(
 		"ACTION_VARIABLE" => "action",
 		"ADD_ELEMENT_CHAIN" => "N",
 		"ADD_PICT_PROP" => "-",
 		"ADD_PROPERTIES_TO_BASKET" => "Y",
 		"ADD_SECTIONS_CHAIN" => "Y",
-		"AJAX_MODE" => "N",
+		"AJAX_MODE" => "Y",
 		"AJAX_OPTION_ADDITIONAL" => "",
-		"AJAX_OPTION_HISTORY" => "N",
+		"AJAX_OPTION_HISTORY" => "Y",
 		"AJAX_OPTION_JUMP" => "N",
 		"AJAX_OPTION_STYLE" => "Y",
 		"BASKET_URL" => "/personal/basket.php",
@@ -27,42 +27,25 @@ $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
 		"COMPONENT_TEMPLATE" => "catalogg",
 		"CONVERT_CURRENCY" => "N",
 		"DETAIL_ADD_DETAIL_TO_SLIDER" => "N",
-		"DETAIL_ADD_TO_BASKET_ACTION" => array(
-			0 => "BUY",
-			1 => "ADD",
-		),
-		"DETAIL_ADD_TO_BASKET_ACTION_PRIMARY" => array(
-		),
+		"DETAIL_ADD_TO_BASKET_ACTION" => array(0=>"BUY",1=>"ADD",),
+		"DETAIL_ADD_TO_BASKET_ACTION_PRIMARY" => array(),
 		"DETAIL_BACKGROUND_IMAGE" => "-",
 		"DETAIL_BRAND_USE" => "N",
 		"DETAIL_BROWSER_TITLE" => "-",
 		"DETAIL_CHECK_SECTION_ID_VARIABLE" => "N",
-		"DETAIL_DETAIL_PICTURE_MODE" => array(
-			0 => "POPUP",
-		),
+		"DETAIL_DETAIL_PICTURE_MODE" => array(0=>"POPUP",),
 		"DETAIL_DISPLAY_NAME" => "Y",
 		"DETAIL_DISPLAY_PREVIEW_TEXT_MODE" => "E",
 		"DETAIL_IMAGE_RESOLUTION" => "16by9",
-		"DETAIL_MAIN_BLOCK_OFFERS_PROPERTY_CODE" => array(
-		),
-		"DETAIL_MAIN_BLOCK_PROPERTY_CODE" => array(
-		),
+		"DETAIL_MAIN_BLOCK_OFFERS_PROPERTY_CODE" => array(),
+		"DETAIL_MAIN_BLOCK_PROPERTY_CODE" => array(),
 		"DETAIL_META_DESCRIPTION" => "-",
 		"DETAIL_META_KEYWORDS" => "-",
-		"DETAIL_OFFERS_FIELD_CODE" => array(
-			0 => "",
-			1 => "",
-		),
-		"DETAIL_OFFERS_PROPERTY_CODE" => array(
-			0 => "57",
-			1 => "",
-		),
+		"DETAIL_OFFERS_FIELD_CODE" => array(0=>"",1=>"",),
+		"DETAIL_OFFERS_PROPERTY_CODE" => array(0=>"57",1=>"",),
 		"DETAIL_PRODUCT_INFO_BLOCK_ORDER" => "sku,props",
 		"DETAIL_PRODUCT_PAY_BLOCK_ORDER" => "rating,price,priceRanges,quantityLimit,quantity,buttons",
-		"DETAIL_PROPERTY_CODE" => array(
-			0 => "",
-			1 => "",
-		),
+		"DETAIL_PROPERTY_CODE" => array(0=>"",1=>"",),
 		"DETAIL_SET_CANONICAL_URL" => "N",
 		"DETAIL_SET_VIEWED_IN_COMPONENT" => "N",
 		"DETAIL_SHOW_POPULAR" => "Y",
@@ -78,28 +61,13 @@ $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
 		"ELEMENT_SORT_FIELD2" => "id",
 		"ELEMENT_SORT_ORDER" => "asc",
 		"ELEMENT_SORT_ORDER2" => "desc",
-		"FILTER_FIELD_CODE" => array(
-			0 => "",
-			1 => "",
-		),
+		"FILTER_FIELD_CODE" => array(0=>"",1=>"",),
 		"FILTER_HIDE_ON_MOBILE" => "N",
-		"FILTER_NAME" => "filter",
-		"FILTER_OFFERS_FIELD_CODE" => array(
-			0 => "",
-			1 => "",
-		),
-		"FILTER_OFFERS_PROPERTY_CODE" => array(
-			0 => "57",
-			1 => "",
-		),
-		"FILTER_PRICE_CODE" => array(
-			0 => "BASE",
-		),
-		"FILTER_PROPERTY_CODE" => array(
-			0 => "ATT_KINDS",
-			1 => "ATT_MANUFACTURE",
-			2 => "",
-		),
+		"FILTER_NAME" => "",
+		"FILTER_OFFERS_FIELD_CODE" => array(0=>"",1=>"",),
+		"FILTER_OFFERS_PROPERTY_CODE" => array(0=>"57",1=>"",),
+		"FILTER_PRICE_CODE" => array(),
+		"FILTER_PROPERTY_CODE" => array(0=>"ATT_KINDS",1=>"ATT_MANUFACTURE",2=>"",),
 		"FILTER_VIEW_MODE" => "VERTICAL",
 		"GIFTS_DETAIL_BLOCK_TITLE" => "Выберите один из подарков",
 		"GIFTS_DETAIL_HIDE_BLOCK_TITLE" => "N",
@@ -122,12 +90,9 @@ $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
 		"IBLOCK_ID" => "10",
 		"IBLOCK_TYPE" => "products",
 		"INCLUDE_SUBSECTIONS" => "Y",
-		"INSTANT_RELOAD" => "N",
-		"LABEL_PROP" => array(
-			0 => "ATT_MANUFACTURE",
-		),
-		"LABEL_PROP_MOBILE" => array(
-		),
+		"INSTANT_RELOAD" => "Y",
+		"LABEL_PROP" => array(0=>"ATT_MANUFACTURE",),
+		"LABEL_PROP_MOBILE" => array(),
 		"LABEL_PROP_POSITION" => "top-left",
 		"LAZY_LOAD" => "N",
 		"LINE_ELEMENT_COUNT" => "3",
@@ -139,23 +104,13 @@ $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
 		"LIST_ENLARGE_PRODUCT" => "STRICT",
 		"LIST_META_DESCRIPTION" => "-",
 		"LIST_META_KEYWORDS" => "-",
-		"LIST_OFFERS_FIELD_CODE" => array(
-			0 => "",
-			1 => "",
-		),
+		"LIST_OFFERS_FIELD_CODE" => array(0=>"",1=>"",),
 		"LIST_OFFERS_LIMIT" => "5",
-		"LIST_OFFERS_PROPERTY_CODE" => array(
-			0 => "57",
-			1 => "",
-		),
+		"LIST_OFFERS_PROPERTY_CODE" => array(0=>"57",1=>"",),
 		"LIST_PRODUCT_BLOCKS_ORDER" => "price,props,sku,quantityLimit,quantity,buttons,compare",
 		"LIST_PRODUCT_ROW_VARIANTS" => "[{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false}]",
-		"LIST_PROPERTY_CODE" => array(
-			0 => "ATT_MANUFACTURE",
-			1 => "",
-		),
-		"LIST_PROPERTY_CODE_MOBILE" => array(
-		),
+		"LIST_PROPERTY_CODE" => array(0=>"ATT_MANUFACTURE",1=>"",),
+		"LIST_PROPERTY_CODE_MOBILE" => array(),
 		"LIST_SHOW_SLIDER" => "Y",
 		"LIST_SLIDER_INTERVAL" => "3000",
 		"LIST_SLIDER_PROGRESS" => "N",
@@ -171,17 +126,13 @@ $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
 		"MESS_NOT_AVAILABLE" => "Нет в наличии",
 		"MESS_PRICE_RANGES_TITLE" => "Цены",
 		"MESS_PROPERTIES_TAB" => "Характеристики",
-		"OFFERS_CART_PROPERTIES" => array(
-			0 => "57",
-		),
+		"OFFERS_CART_PROPERTIES" => array(0=>"57",),
 		"OFFERS_SORT_FIELD" => "sort",
 		"OFFERS_SORT_FIELD2" => "id",
 		"OFFERS_SORT_ORDER" => "asc",
 		"OFFERS_SORT_ORDER2" => "desc",
 		"OFFER_ADD_PICT_PROP" => "-",
-		"OFFER_TREE_PROPS" => array(
-			0 => "57",
-		),
+		"OFFER_TREE_PROPS" => array(0=>"57",),
 		"PAGER_BASE_LINK_ENABLE" => "N",
 		"PAGER_DESC_NUMBERING" => "N",
 		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
@@ -191,15 +142,12 @@ $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
 		"PAGER_TITLE" => "Товары",
 		"PAGE_ELEMENT_COUNT" => "30",
 		"PARTIAL_PRODUCT_PROPERTIES" => "N",
-		"PRICE_CODE" => array(
-			0 => "BASE",
-		),
+		"PRICE_CODE" => array(0=>"BASE",),
 		"PRICE_VAT_INCLUDE" => "Y",
 		"PRICE_VAT_SHOW_VALUE" => "N",
 		"PRODUCT_DISPLAY_MODE" => "N",
 		"PRODUCT_ID_VARIABLE" => "id",
-		"PRODUCT_PROPERTIES" => array(
-		),
+		"PRODUCT_PROPERTIES" => array(),
 		"PRODUCT_PROPS_VARIABLE" => "prop",
 		"PRODUCT_QUANTITY_VARIABLE" => "quantity",
 		"PRODUCT_SUBSCRIPTION" => "Y",
@@ -215,7 +163,9 @@ $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
 		"SECTION_COUNT_ELEMENTS" => "Y",
 		"SECTION_ID_VARIABLE" => "SECTION_ID",
 		"SECTION_TOP_DEPTH" => "2",
+		"SEF_FOLDER" => "/products/",
 		"SEF_MODE" => "Y",
+		"SEF_URL_TEMPLATES" => array("sections"=>"","section"=>"#SECTION_CODE#/","element"=>"#SECTION_CODE#/#ELEMENT_CODE#/","compare"=>"compare.php?action=#ACTION_CODE#","smart_filter"=>"#SECTION_ID#/arrFilter/#SMART_FILTER_PATH#/apply/",),
 		"SET_LAST_MODIFIED" => "N",
 		"SET_STATUS_404" => "N",
 		"SET_TITLE" => "Y",
@@ -238,23 +188,13 @@ $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
 		"TOP_ELEMENT_SORT_ORDER2" => "desc",
 		"TOP_ENLARGE_PRODUCT" => "STRICT",
 		"TOP_LINE_ELEMENT_COUNT" => "3",
-		"TOP_OFFERS_FIELD_CODE" => array(
-			0 => "",
-			1 => "",
-		),
+		"TOP_OFFERS_FIELD_CODE" => array(0=>"",1=>"",),
 		"TOP_OFFERS_LIMIT" => "5",
-		"TOP_OFFERS_PROPERTY_CODE" => array(
-			0 => "57",
-			1 => "",
-		),
+		"TOP_OFFERS_PROPERTY_CODE" => array(0=>"57",1=>"",),
 		"TOP_PRODUCT_BLOCKS_ORDER" => "price,props,sku,quantityLimit,quantity,buttons,compare",
 		"TOP_PRODUCT_ROW_VARIANTS" => "[{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false}]",
-		"TOP_PROPERTY_CODE" => array(
-			0 => "ATT_MANUFACTURE",
-			1 => "",
-		),
-		"TOP_PROPERTY_CODE_MOBILE" => array(
-		),
+		"TOP_PROPERTY_CODE" => array(0=>"ATT_MANUFACTURE",1=>"",),
+		"TOP_PROPERTY_CODE_MOBILE" => array(),
 		"TOP_SHOW_SLIDER" => "Y",
 		"TOP_SLIDER_INTERVAL" => "3000",
 		"TOP_SLIDER_PROGRESS" => "N",
@@ -274,19 +214,6 @@ $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
 		"USE_REVIEW" => "N",
 		"USE_SALE_BESTSELLERS" => "Y",
 		"USE_STORE" => "N",
-		"SEF_FOLDER" => "/products/",
-		"SEF_URL_TEMPLATES" => array(
-			"sections" => "",
-			"section" => "#SECTION_CODE#/",
-			"element" => "#SECTION_CODE#/#ELEMENT_CODE#/",
-			"compare" => "compare.php?action=#ACTION_CODE#",
-			"smart_filter" => "#SECTION_ID#/filter/#SMART_FILTER_PATH#/apply/",
-		),
-		"VARIABLE_ALIASES" => array(
-			"compare" => array(
-				"ACTION_CODE" => "action",
-			),
-		)
-	),
-	false
+		"VARIABLE_ALIASES" => array("compare"=>array("ACTION_CODE"=>"action",),)
+	)
 );?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
